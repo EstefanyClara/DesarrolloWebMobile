@@ -1,121 +1,148 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="style.css">
-            <title>Clara Trello</title>
-        </head>
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <img src="unicron.jpg" width="30" height="30"> 
-                <a class="navbar-brand" href="#">Clara Trello</a>
-                       
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-
-            <div class="text-center">
-                <box-icon name='task' color='#ffffff' size='lg' >
-                
-                <h2>Panel de tareas</h2>
-            </box-icon>
-            </div>
-            <div class="container-">
-                <div class="row"> 
-                    <div class="col-sm-4">
-                        <div class="card" >
-                            <img src="Imagen1.png" class="card-img-top" alt="Muestra una imagen con un cafe y un block de notas con la palabra To do">
-                            <div class="card-body">
-
-                            <h3 class="card-title">Por hacer</h3>
-                            <p class="card-text"> Ingrese las tareas a realizar</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Ejercicios de Desarrollo web y Mobile
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Ejercicios de Inteligencia Artificial
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Salir a correr 
-                                </label>
-                            </div>
-                            
-                            <div class="d-flex justify-content-center align-items-center  ">
-                                <a href="#" class="btn btn-primary">Ver tareas</a>
-                            </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card" >
-                            <img src="Imagen2.png" class="card-img-top" alt="Muestra una imagen con flechas que dice in progress">
-                            <div class="card-body">
-
-                            <h3 class="card-title">En proceso</h3>
-                            <p class="card-text">Tareas que están en proceso</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Auditoría de higiene 
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Actualizar presentación
-                                </label>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center ">
-                                <a href="#" class="btn btn-primary">Ver tareas</a>
-                            </div>
-                           
-
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 ">
-                        <div class="card" >
-                            <img src="Imagen3.png" class="card-img-top" alt="Muestra una imagen con un tic y el texto que dice job done">
-                            <div class="card-body">
-                            <h3 class="card-title">Finalizados</h3>
-                            <p class="card-text">Tareas que ya están finalizadas</p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Ejercicios de Desarrollo android
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Hacer las compras de la semana 
-                                </label>
-                            </div>
-                           
-                            <div class="d-flex justify-content-center align-items-center ">
-                                <a href="#" class="btn btn-primary">Ver tareas</a>
-                            </div>
-                        </div>
-                        </div>
-                    
-                    </div>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--Agregar boostrap al archivo-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!--Agergar icono a la pagina-->
+    <link rel="shortcut icon" href="unicron.jpg" type="image/x-icon" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!--Agregar archivo de estilo css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Agrega el titulo que aparece en la pestana-->
+    <title>Clara Trello</title>
+  </head>
+  <body>
+    <!--Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+      <img src="unicron.jpg" width="30" height="30" />
+      <a class="navbar-brand" href="#">Clara Trello</a>
+      <!--Menu que aparece cuando se achica la ventana -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ><span class="navbar-toggler-icon"></span></button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#"> Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Agregar tarjeta</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    
+    <div class="text-center">
+      <box-icon name="task" color="#ffffff" size="lg"><h2>Panel de tareas</h2></box-icon>
+    </div>
+    
+    <div class="container-">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="Imagen1.png" class="card-img-top" alt="Muestra una imagen con un cafe y un block de notas con la palabra To do"/>
+            <div class="card-body">
+              <h3 class="card-title">Por hacer</h3>
+              <p class="card-text">Ingrese las tareas a realizar</p>
+              <ul class="list-group list-group-flush">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                  <label class="form-check-label" for="flexCheckDefault">Ejercicios de Desarrollo web y Mobile</label>
                 </div>
-            </div> 
- 
-        </body>
-
-    </html>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                  <label class="form-check-label" for="flexCheckDefault">Ejercicios de Inteligencia Artificial</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox"value=""id="flexCheckDefault"/>
+                  <label class="form-check-label" for="flexCheckDefault"> Salir a correr</label>
+                </div>
+              </ul>
+              <div class="d-flex justify-content-center align-items-center">
+                <a id="botoncito" href="#" class="btn btn-primary">Agregar tareas</a>
+                <a  href="https://www.google.com" title="Google">Enlace a google</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="Imagen2.png" class="card-img-top" alt="Muestra una imagen con flechas que dice in progress"/>
+            <div class="card-body">
+              <h3 class="card-title">En proceso</h3>
+              <p class="card-text">Tareas que están en proceso</p>
+              
+               <form id="taskForm">
+                <input  id="entrada" type="text" class="form-control" placeholder="Ingrese su tarea" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                <p class="lista" > </p>
+                <button id="btn">Agregar</button>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="Imagen3.png"class="card-img-top" alt="Muestra una imagen con un tic y el texto que dice job done" />
+            <div class="card-body">
+              <h3 class="card-title">Finalizados</h3>
+              <p class="card-text">Tareas que ya están finalizadas</p>
+              <form id="taskForm">
+                <input  id="entrada" type="text" class="form-control" placeholder="Ingrese su tarea" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                <button id="btn">Agregar</button>
+                <p class="lista" > </p>
+                
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img onmouseover="mouseoverevent()" src="gandamStyle.gif" width="100" height="100" />
+      <h1 class="glow">ZONA COOL</h1>
+      <h3>NASA Astronomy Picture Of The Day</h3>
+      <h4 id="title"></h4>
+      <h6>Date: <span id="date"></span></h6>
+      <img id="pic" src="" alt="NASA Picture Of The Day" width="25%">
+      <p id="explanation"></p>
+      <button id="getInfoButton">Obtener Información</button>
+    </div>
+      <script src = "filejs.js" defer></script>   
+    </div>
+  </body>
+</html>
